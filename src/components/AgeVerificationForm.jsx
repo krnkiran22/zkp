@@ -31,6 +31,9 @@ function AgeVerificationForm() {
 
       setLoading(true);
 
+
+
+      
       const provider = new BrowserProvider(window.ethereum);
       const signer = await provider.getSigner();
       const contract = new Contract(CONTRACT_ADDRESS, AgeVerifierABI, signer);
